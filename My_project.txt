@@ -1,4 +1,4 @@
-Visual Studio (команды git)
+Visual Studio (команды Git)
 git status - смотрим статус
 git add - помечаем файлы для добавления в коммит
 git commit -m 'comment' - коммитим 
@@ -9,3 +9,4 @@ git config --list --show-origin
 git diff -Чтобы увидеть, что же вы изменили, но пока не проиндексировали
 $ git diff --staged - Если вы хотите посмотреть, что вы проиндексировали и что войдёт в следующий коммит
 git status -s - Сокращенный вывод статуса
+$ cat .gitignore - игнорирование файлов
