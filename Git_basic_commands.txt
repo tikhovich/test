@@ -1,0 +1,18 @@
+Visual Studio (команды Git)
+git status - смотрим статус
+git add - помечаем файлы для добавления в коммит
+git commit -m 'comment' - коммитим 
+git push - пушим
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --list --show-origin
+git diff -Чтобы увидеть, что же вы изменили, но пока не проиндексировали
+git diff --staged - Если вы хотите посмотреть, что вы проиндексировали и что войдёт в следующий коммит
+git status -s - Сокращенный вывод статуса
+cat .gitignore - игнорирование файлов
+git commit -a -m 'Add new benchmarks' - коммит с игнорированием индексации
+rm PROJECTS.md -  удалите файл из своего рабочего каталога
+git rm PROJECTS.md - Удаление файлов
+git rm log/\*.log - Эта команда удаляет все файлы, имеющие расширение .log и находящиеся в каталоге log/. 
+git rm \*~ - Эта команда удаляет все файлы, имеющие расширение .log
+git mv file_from file_to - переименовать файл в Git
