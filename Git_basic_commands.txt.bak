@@ -16,6 +16,7 @@ git rm PROJECTS.md - Удаление файлов
 git rm log/\*.log - Эта команда удаляет все файлы, имеющие расширение .log и находящиеся в каталоге log/. 
 git rm \*~ - Эта команда удаляет все файлы, имеющие расширение .log
 git mv file_from file_to - переименовать файл в Git
+git commit --amend - отмены сделанных изменений
  
  
 Log
@@ -30,6 +31,8 @@ git log --pretty=format:"%h - %an, %ar : %s" - позволяет указать
 https://git-scm.com/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2
 git log --pretty=format:"%h %s" --graph - показывает текущую ветку и историю слияний
 git log --since=2.weeks  - писок коммитов, сделанных за последние две недели
+
+
 
 
 
