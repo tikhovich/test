@@ -1,9 +1,10 @@
 Visual Studio  (команды Git)
+git pull - чтобы автоматически получить изменения из удалённой ветки и слить их со своей текущей
 git status - смотрим статус
 git -h - список команд
 git add - помечаем файлы для добавления в коммит (можно всю папку например "git add .")
 git commit -m 'comment' - коммитим 
-git push - пушим
+git push - пушим, oтправка изменений в удаленный репозиторий
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 git config --list --show-origin
@@ -24,8 +25,7 @@ git reset HEAD - для исключения из индекса
 git config --list -  проверить используемую конфигурацию
 git restore --staged <file> - отменa индексации файла
 
-Пусть
- 
+
 Log
 git log - посмотреть коммиты
 git log -p -2 -  который показывает разницу (выводит патч), внесенную в каждый коммит. Так же вы можете ограничить количество записей в выводе команды; используйте параметр -2 для вывода только двух записей
@@ -39,6 +39,19 @@ https://git-scm.com/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D
 git log --pretty=format:"%h %s" --graph - показывает текущую ветку и историю слияний
 git log --since=2.weeks  - писок коммитов, сделанных за последние две недели
 
+Удаленные репозитори
+git remote add <shortname> <url> - добавить удаленный репозиторий
+git remote - названия доступных удалённых репозиториев
+git remote -v -  чтобы просмотреть адреса для чтения и записи, привязанные к репозиторию
+git clone - клонирование репозитория
+git remote rename pb paul - переименование репозитория
+git remote remove <shortname> - удаление репозитория 
+
+
+Tэги
+git tag -a v1.4 -m "my version 1.4" - создание тэга
+git tag - просмотр тэга
+git tag -l "v1.8.5*" - просмотр определенных тэгов
 
 
 
