@@ -52,15 +52,16 @@ Tэги
 git tag -a v1.4 -m "my version 1.4" - создание тэга
 git tag - просмотр тэга
 git tag -l "v1.8.5*" - просмотр определенных тэгов
-
-
+git show v1.4 - посмотреть данные вместе с коммитом
+git tag -d v1.4 - удалить тэг
+git push origin :refs/tags/v1.4 - изъятия тега из внешнего репозитория
 
 
 Что бы выйти из команды нужно нажать Q
 
 
 Уточнить git checkout -- <file> - Отмена изменений в файле
-
+git push origin :refs/tags/v1.4-lw
 
 
 
