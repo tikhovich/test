@@ -1,6 +1,7 @@
 Visual Studio  (команды Git)
+git init - инициация папки (перед этим заходим в папку cd c:User/Git/)
 git pull - чтобы автоматически получить изменения из удалённой ветки и слить их со своей текущей
-git status - смотрим статус
+git status - смотрим статус (в каком статусе наш репозиторий)
 git -h - список команд
 git add - помечаем файлы для добавления в коммит (можно всю папку например "git add .")
 git commit -m 'comment' - коммитим 
@@ -24,7 +25,16 @@ git commit --amend - отмены сделанных изменений
 git reset HEAD - для исключения из индекса
 git config --list -  проверить используемую конфигурацию
 git restore --staged <file> - отменa индексации файла
+git push -u origin master (Git push) - заливаем наши изменения, например в GitHub
+ 
 
+Branch
+git branch - посмотреть ветку
+git branch <name_branch> - создать ветку
+git branch -D <name_branch> - удалить ветку
+git checkout <name_branch> - переключиться на другую ветку
+git checkout -b <name_branch> - создание новой ветки и переключение на нее
+git merge <name_branch> - совмещение веток
 
 Log
 git log - посмотреть коммиты
@@ -54,7 +64,7 @@ git tag - просмотр тэга
 git tag -l "v1.8.5*" - просмотр определенных тэгов
 git show v1.4 - посмотреть данные вместе с коммитом
 git tag -d v1.4 - удалить тэг
-git push origin :refs/tags/v1.4 - изъятия тега из внешнего репозитория
+git push origin :refs/tags/v1.4  - изъятия тега из внешнего репозитория
 
 Псевдонимы
 $ git config --global alias.co checkout
@@ -63,11 +73,11 @@ $ git config --global alias.ci commit
 $ git config --global alias.st status
 
 Что бы выйти из команды нужно нажать Q
+clear - очистить консоль
+dir - посмотреть какие файлы в папке
+ls- посмотреть папки
 
 
-Уточнить git checkout -- <file> - Отмена изменений в файле
-git push origin :refs/tags/v1.4-lw
 
 
 
-Qazz
