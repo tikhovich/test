@@ -56,6 +56,11 @@ git show v1.4 - посмотреть данные вместе с коммито
 git tag -d v1.4 - удалить тэг
 git push origin :refs/tags/v1.4 - изъятия тега из внешнего репозитория
 
+Псевдонимы
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
 
 Что бы выйти из команды нужно нажать Q
 
